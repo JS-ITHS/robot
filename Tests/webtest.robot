@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation  Some basic information about the whole test suite
 Resource  ../Resources/keywords.robot
+Library  ../Scripts/remove_parenthesis.py
 Library  SeleniumLibrary
 Suite Setup  Begin Web Test
 Suite Teardown  End Web Test
@@ -20,13 +21,13 @@ User Can Search For A Product
     [Documentation]  This is some basic info about the second test
     [Tags]  Test 2
     Go To Web Page
-    Search For Product  Game & Watch: The Legend of Zelda  Game & Watch: The Legend of Zelda
+    Search For Product  Game & Watch
 
 User Can Search For Another Product
     [Documentation]  This is some basic info about the third test
     [Tags]  Test 3
     Go To Web Page
-    Search For Product  Jurassic World Evolution 2 PlayStation 5  Jurassic World Evolution 2 PlayStation 5
+    Search For Product  NINTENDO Switch
 
 
 

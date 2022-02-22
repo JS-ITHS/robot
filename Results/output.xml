@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220222 12:30:04.531" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220222 13:40:37.435" rpa="false" schemaversion="2">
 <suite id="s1" name="Tests" source="C:\Users\joaki\PycharmProjects\TestSelenium\Tests">
 <suite id="s1-s1" name="Webtest" source="C:\Users\joaki\PycharmProjects\TestSelenium\Tests\webtest.robot">
 <kw name="Begin Web Test" library="keywords" type="SETUP">
@@ -7,10 +7,10 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220222 12:30:04.722" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220222 12:30:04.722" endtime="20220222 12:30:06.019"/>
+<msg timestamp="20220222 13:40:37.618" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220222 13:40:37.618" endtime="20220222 13:40:38.868"/>
 </kw>
-<status status="PASS" starttime="20220222 12:30:04.722" endtime="20220222 12:30:06.019"/>
+<status status="PASS" starttime="20220222 13:40:37.617" endtime="20220222 13:40:38.869"/>
 </kw>
 <test id="s1-s1-t1" name="User Can Access Website and Search For Product">
 <kw name="Go To Web Page" library="keywords">
@@ -18,24 +18,24 @@
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220222 12:30:06.022" level="INFO">Opening url 'https://www.mediamarkt.se'</msg>
-<status status="PASS" starttime="20220222 12:30:06.022" endtime="20220222 12:30:08.120"/>
+<msg timestamp="20220222 13:40:38.872" level="INFO">Opening url 'https://www.mediamarkt.se'</msg>
+<status status="PASS" starttime="20220222 13:40:38.871" endtime="20220222 13:40:40.463"/>
 </kw>
-<status status="PASS" starttime="20220222 12:30:06.022" endtime="20220222 12:30:08.120"/>
+<status status="PASS" starttime="20220222 13:40:38.871" endtime="20220222 13:40:40.463"/>
 </kw>
 <kw name="Verify Page Loaded" library="keywords">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Kampanj:</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220222 12:30:08.121" endtime="20220222 12:30:08.165"/>
+<status status="PASS" starttime="20220222 13:40:40.464" endtime="20220222 13:40:40.505"/>
 </kw>
-<status status="PASS" starttime="20220222 12:30:08.120" endtime="20220222 12:30:08.165"/>
+<status status="PASS" starttime="20220222 13:40:40.463" endtime="20220222 13:40:40.505"/>
 </kw>
-<status status="PASS" starttime="20220222 12:30:06.021" endtime="20220222 12:30:08.165"/>
+<status status="PASS" starttime="20220222 13:40:38.871" endtime="20220222 13:40:40.505"/>
 </kw>
 <doc>This is some basic information about the test</doc>
 <tag>Test 1</tag>
-<status status="PASS" starttime="20220222 12:30:06.020" endtime="20220222 12:30:08.166"/>
+<status status="PASS" starttime="20220222 13:40:38.870" endtime="20220222 13:40:40.507"/>
 </test>
 <test id="s1-s1-t2" name="User Can Search For A Product">
 <kw name="Go To Web Page" library="keywords">
@@ -43,61 +43,78 @@
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220222 12:30:08.170" level="INFO">Opening url 'https://www.mediamarkt.se'</msg>
-<status status="PASS" starttime="20220222 12:30:08.170" endtime="20220222 12:30:09.686"/>
+<msg timestamp="20220222 13:40:40.515" level="INFO">Opening url 'https://www.mediamarkt.se'</msg>
+<status status="PASS" starttime="20220222 13:40:40.513" endtime="20220222 13:40:41.799"/>
 </kw>
-<status status="PASS" starttime="20220222 12:30:08.170" endtime="20220222 12:30:09.686"/>
+<status status="PASS" starttime="20220222 13:40:40.512" endtime="20220222 13:40:41.799"/>
 </kw>
 <kw name="Verify Page Loaded" library="keywords">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Kampanj:</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220222 12:30:09.687" endtime="20220222 12:30:09.732"/>
+<status status="PASS" starttime="20220222 13:40:41.800" endtime="20220222 13:40:41.909"/>
 </kw>
-<status status="PASS" starttime="20220222 12:30:09.686" endtime="20220222 12:30:09.732"/>
+<status status="PASS" starttime="20220222 13:40:41.799" endtime="20220222 13:40:41.909"/>
 </kw>
-<status status="PASS" starttime="20220222 12:30:08.169" endtime="20220222 12:30:09.733"/>
+<status status="PASS" starttime="20220222 13:40:40.511" endtime="20220222 13:40:41.909"/>
 </kw>
 <kw name="Search For Product" library="keywords">
-<arg>Game &amp; Watch: The Legend of Zelda</arg>
-<arg>Game &amp; Watch: The Legend of Zelda</arg>
+<arg>Game &amp; Watch</arg>
 <kw name="Enter Search Term" library="keywords">
 <arg>${search_term}</arg>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="search-autocomplete"]/form/input[1]</arg>
 <arg>${search_term}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220222 12:30:09.737" level="INFO">Typing text 'Game &amp; Watch: The Legend of Zelda' into text field '//*[@id="search-autocomplete"]/form/input[1]'.</msg>
-<status status="PASS" starttime="20220222 12:30:09.735" endtime="20220222 12:30:10.083"/>
+<msg timestamp="20220222 13:40:41.911" level="INFO">Typing text 'Game &amp; Watch' into text field '//*[@id="search-autocomplete"]/form/input[1]'.</msg>
+<status status="PASS" starttime="20220222 13:40:41.910" endtime="20220222 13:40:42.061"/>
 </kw>
-<status status="PASS" starttime="20220222 12:30:09.734" endtime="20220222 12:30:10.083"/>
+<status status="PASS" starttime="20220222 13:40:41.910" endtime="20220222 13:40:42.061"/>
 </kw>
 <kw name="Submit Search" library="keywords">
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>//*[@id="search-autocomplete"]/form/input[1]</arg>
 <arg>RETURN</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220222 12:30:10.084" level="INFO">Sending key(s) ('RETURN',) to //*[@id="search-autocomplete"]/form/input[1] element.</msg>
-<msg timestamp="20220222 12:30:10.612" level="INFO">Pressing special key RETURN to element.</msg>
-<msg timestamp="20220222 12:30:10.612" level="INFO">Releasing special key RETURN.</msg>
-<status status="PASS" starttime="20220222 12:30:10.084" endtime="20220222 12:30:12.260"/>
+<msg timestamp="20220222 13:40:42.063" level="INFO">Sending key(s) ('RETURN',) to //*[@id="search-autocomplete"]/form/input[1] element.</msg>
+<msg timestamp="20220222 13:40:42.403" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20220222 13:40:42.403" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20220222 13:40:42.062" endtime="20220222 13:40:44.229"/>
 </kw>
-<status status="PASS" starttime="20220222 12:30:10.084" endtime="20220222 12:30:12.260"/>
+<status status="PASS" starttime="20220222 13:40:42.062" endtime="20220222 13:40:44.229"/>
 </kw>
 <kw name="Verify Search Completed" library="keywords">
-<arg>${search_result}</arg>
-<kw name="Wait Until Page Contains" library="SeleniumLibrary">
-<arg>${search_result}</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220222 12:30:12.261" endtime="20220222 12:30:12.384"/>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@id="category"]/hgroup/h1/em</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220222 13:40:44.230" endtime="20220222 13:40:44.264"/>
 </kw>
-<status status="PASS" starttime="20220222 12:30:12.260" endtime="20220222 12:30:12.384"/>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${element_text}</var>
+<arg>//*[@id="category"]/hgroup/h1/em</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220222 13:40:44.361" level="INFO">${element_text} = (2)</msg>
+<status status="PASS" starttime="20220222 13:40:44.264" endtime="20220222 13:40:44.361"/>
 </kw>
-<status status="PASS" starttime="20220222 12:30:09.733" endtime="20220222 12:30:12.385"/>
+<kw name="Convert Into Number" library="remove_parenthesis">
+<var>${actual_amount}</var>
+<arg>${element_text}</arg>
+<doc>Remove parenthesis from number and return number</doc>
+<msg timestamp="20220222 13:40:44.362" level="INFO">${actual_amount} = 2</msg>
+<status status="PASS" starttime="20220222 13:40:44.362" endtime="20220222 13:40:44.362"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${actual_amount} &gt; 0</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20220222 13:40:44.362" endtime="20220222 13:40:44.363"/>
+</kw>
+<status status="PASS" starttime="20220222 13:40:44.229" endtime="20220222 13:40:44.363"/>
+</kw>
+<status status="PASS" starttime="20220222 13:40:41.909" endtime="20220222 13:40:44.363"/>
 </kw>
 <doc>This is some basic info about the second test</doc>
 <tag>Test 2</tag>
-<status status="PASS" starttime="20220222 12:30:08.168" endtime="20220222 12:30:12.385"/>
+<status status="PASS" starttime="20220222 13:40:40.510" endtime="20220222 13:40:44.364"/>
 </test>
 <test id="s1-s1-t3" name="User Can Search For Another Product">
 <kw name="Go To Web Page" library="keywords">
@@ -105,73 +122,90 @@
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220222 12:30:12.389" level="INFO">Opening url 'https://www.mediamarkt.se'</msg>
-<status status="PASS" starttime="20220222 12:30:12.389" endtime="20220222 12:30:13.629"/>
+<msg timestamp="20220222 13:40:44.368" level="INFO">Opening url 'https://www.mediamarkt.se'</msg>
+<status status="PASS" starttime="20220222 13:40:44.367" endtime="20220222 13:40:45.747"/>
 </kw>
-<status status="PASS" starttime="20220222 12:30:12.388" endtime="20220222 12:30:13.630"/>
+<status status="PASS" starttime="20220222 13:40:44.367" endtime="20220222 13:40:45.747"/>
 </kw>
 <kw name="Verify Page Loaded" library="keywords">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Kampanj:</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220222 12:30:13.631" endtime="20220222 12:30:13.764"/>
+<status status="PASS" starttime="20220222 13:40:45.748" endtime="20220222 13:40:45.876"/>
 </kw>
-<status status="PASS" starttime="20220222 12:30:13.630" endtime="20220222 12:30:13.764"/>
+<status status="PASS" starttime="20220222 13:40:45.747" endtime="20220222 13:40:45.876"/>
 </kw>
-<status status="PASS" starttime="20220222 12:30:12.388" endtime="20220222 12:30:13.764"/>
+<status status="PASS" starttime="20220222 13:40:44.366" endtime="20220222 13:40:45.876"/>
 </kw>
 <kw name="Search For Product" library="keywords">
-<arg>Jurassic World Evolution 2 PlayStation 5</arg>
-<arg>Jurassic World Evolution 2 PlayStation 5</arg>
+<arg>NINTENDO Switch</arg>
 <kw name="Enter Search Term" library="keywords">
 <arg>${search_term}</arg>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="search-autocomplete"]/form/input[1]</arg>
 <arg>${search_term}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220222 12:30:13.767" level="INFO">Typing text 'Jurassic World Evolution 2 PlayStation 5' into text field '//*[@id="search-autocomplete"]/form/input[1]'.</msg>
-<status status="PASS" starttime="20220222 12:30:13.767" endtime="20220222 12:30:13.916"/>
+<msg timestamp="20220222 13:40:45.879" level="INFO">Typing text 'NINTENDO Switch' into text field '//*[@id="search-autocomplete"]/form/input[1]'.</msg>
+<status status="PASS" starttime="20220222 13:40:45.877" endtime="20220222 13:40:45.982"/>
 </kw>
-<status status="PASS" starttime="20220222 12:30:13.766" endtime="20220222 12:30:13.917"/>
+<status status="PASS" starttime="20220222 13:40:45.877" endtime="20220222 13:40:45.982"/>
 </kw>
 <kw name="Submit Search" library="keywords">
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>//*[@id="search-autocomplete"]/form/input[1]</arg>
 <arg>RETURN</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220222 12:30:13.919" level="INFO">Sending key(s) ('RETURN',) to //*[@id="search-autocomplete"]/form/input[1] element.</msg>
-<msg timestamp="20220222 12:30:14.371" level="INFO">Pressing special key RETURN to element.</msg>
-<msg timestamp="20220222 12:30:14.371" level="INFO">Releasing special key RETURN.</msg>
-<status status="PASS" starttime="20220222 12:30:13.917" endtime="20220222 12:30:16.141"/>
+<msg timestamp="20220222 13:40:45.983" level="INFO">Sending key(s) ('RETURN',) to //*[@id="search-autocomplete"]/form/input[1] element.</msg>
+<msg timestamp="20220222 13:40:46.330" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20220222 13:40:46.330" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20220222 13:40:45.982" endtime="20220222 13:40:49.368"/>
 </kw>
-<status status="PASS" starttime="20220222 12:30:13.917" endtime="20220222 12:30:16.141"/>
+<status status="PASS" starttime="20220222 13:40:45.982" endtime="20220222 13:40:49.369"/>
 </kw>
 <kw name="Verify Search Completed" library="keywords">
-<arg>${search_result}</arg>
-<kw name="Wait Until Page Contains" library="SeleniumLibrary">
-<arg>${search_result}</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220222 12:30:16.142" endtime="20220222 12:30:16.276"/>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@id="category"]/hgroup/h1/em</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220222 13:40:49.370" endtime="20220222 13:40:49.469"/>
 </kw>
-<status status="PASS" starttime="20220222 12:30:16.141" endtime="20220222 12:30:16.276"/>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${element_text}</var>
+<arg>//*[@id="category"]/hgroup/h1/em</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220222 13:40:49.537" level="INFO">${element_text} = (232)</msg>
+<status status="PASS" starttime="20220222 13:40:49.469" endtime="20220222 13:40:49.537"/>
 </kw>
-<status status="PASS" starttime="20220222 12:30:13.765" endtime="20220222 12:30:16.276"/>
+<kw name="Convert Into Number" library="remove_parenthesis">
+<var>${actual_amount}</var>
+<arg>${element_text}</arg>
+<doc>Remove parenthesis from number and return number</doc>
+<msg timestamp="20220222 13:40:49.537" level="INFO">${actual_amount} = 232</msg>
+<status status="PASS" starttime="20220222 13:40:49.537" endtime="20220222 13:40:49.537"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${actual_amount} &gt; 0</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20220222 13:40:49.537" endtime="20220222 13:40:49.537"/>
+</kw>
+<status status="PASS" starttime="20220222 13:40:49.369" endtime="20220222 13:40:49.538"/>
+</kw>
+<status status="PASS" starttime="20220222 13:40:45.876" endtime="20220222 13:40:49.538"/>
 </kw>
 <doc>This is some basic info about the third test</doc>
 <tag>Test 3</tag>
-<status status="PASS" starttime="20220222 12:30:12.386" endtime="20220222 12:30:16.277"/>
+<status status="PASS" starttime="20220222 13:40:44.365" endtime="20220222 13:40:49.539"/>
 </test>
 <kw name="End Web Test" library="keywords" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220222 12:30:16.279" endtime="20220222 12:30:18.409"/>
+<status status="PASS" starttime="20220222 13:40:49.539" endtime="20220222 13:40:51.694"/>
 </kw>
-<status status="PASS" starttime="20220222 12:30:16.278" endtime="20220222 12:30:18.410"/>
+<status status="PASS" starttime="20220222 13:40:49.539" endtime="20220222 13:40:51.694"/>
 </kw>
 <doc>Some basic information about the whole test suite</doc>
-<status status="PASS" starttime="20220222 12:30:04.554" endtime="20220222 12:30:18.410"/>
+<status status="PASS" starttime="20220222 13:40:37.457" endtime="20220222 13:40:51.695"/>
 </suite>
-<status status="PASS" starttime="20220222 12:30:04.532" endtime="20220222 12:30:18.418"/>
+<status status="PASS" starttime="20220222 13:40:37.437" endtime="20220222 13:40:51.698"/>
 </suite>
 <statistics>
 <total>
